@@ -78,6 +78,9 @@ h4 {
     line-height:30px;
     padding:20px 0 20px 0;
 }
+.version{
+    font-size: 25px;
+}
 header {
     background:url('phyth_logo.png') top left no-repeat;
     background-size:150px 135px;
