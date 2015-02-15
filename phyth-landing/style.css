@@ -1,0 +1,162 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    background-color:#D6D8DD;
+    font-family: 'Open Sans', sans-serif;
+    color:black;
+    font-size:17px;
+    line-height:24px;
+    text-align:center;
+}
+p {
+    margin:0 0 20px 0;
+}
+a {
+    color:#87C5D2;
+}
+hr {border:0; border-top:1px solid #e3e4e6; margin-top:30px;}
+h1, h2 {
+    color:black;
+    font-family: 'Open Sans', sans-serif;
+    font-size:24px;
+    line-height:30px;
+    padding:40px 0 20px 0;
+    background:left 26px no-repeat;
+    margin-left:-90px;
+    padding-left:90px;
+}
+h3 {
+    font-size:26px;
+    line-height:30px;
+    padding:30px 0 0 0;
+    
+}
+h4 {
+    font-size:21px;
+    line-height:30px;
+    padding:20px 0 20px 0;
+}
+header {
+    background:url('phyth_logo.png') top left no-repeat;
+    background-size:150px 135px;
+    background-position:0px 0;
+    width:450px;
+    height:65px;
+    margin:55px auto 0 auto;
+    text-align:left;
+    padding:70px 0 0 176px;
+}
+menu {
+    width:600px;
+    margin:50px auto 22px auto;
+    text-align:left;
+}
+menu a {
+    text-align:center;
+    display:inline-block;
+    background-color:#8E9AB4;
+    height:60px;
+    line-height:60px;
+    width:160px;
+    margin-right:6px;
+    border-radius:5px;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration:none;
+    font-size:14px;
+}
+menu a:hover {
+    background-color:#8F939C;
+}
+article {
+    width:600px;
+    margin:0 auto;
+    text-align:left;
+}
+footer {
+    background-color:white;
+    height:100px;
+    color:#999;
+    font-size:16px;
+    line-height:100px;
+    margin-top:60px;
+}
+footer div {
+    width:800px;
+    text-align:left;
+    margin:0 auto;
+}
+footer nav {
+    float:right;
+}
+footer a {
+    color:#999 !important;
+    margin-left:10px;
+    text-decoration:none;
+    border-bottom:1px solid #eee
+}
+footer a:hover {
+    border-bottom:1px solid #bbb;
+}
+footer img {
+    vertical-align:-9px;
+    margin-right:5px;
+}
+
+pre, p code, li code {
+    font-family:'Andale Mono', 'Courier New', Courier, monospace;
+    font-size:13px;
+    background-color:#ADB5C7;
+    border:1px solid #e3e4e6;
+}
+pre {
+    padding:15px 35px;
+    margin-bottom:30px;
+}
+li code, p code {
+    padding:1px 3px;
+}
+ul {padding-left:20px;}
+li {list-style-type:disc; margin:2px 0 12px 0;}

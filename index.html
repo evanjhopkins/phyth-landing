@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="wf-chaparralpro-n4-active wf-opensans-n4-active wf-chaparralpro-i4-active wf-opensans-n7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Phyth, deploy your API in minutes</title>
+   
+    <link rel="stylesheet" type="text/css" href="./phyth-landing/style.css">
+  </head>
+  <body class="phythpage">
+
+    <header>
+      An API framework written in php and python that works 
+      <br>
+      out of the box. Get your API up in running in minutes. 
+    </header>
+
+    <menu>
+      <a href="https://github.com/evanjhopkins/phyth">Code on Github</a>
+      <a href="https://github.com/evanjhopkins/phyth/archive/master.zip">Download source</a>
+      <a href="https://github.com/evanjhopkins/phyth">Contribute</a>
+    </menu>
+
+
+    <article>
+
+
+<h1 class="what">What is Phyth?</h1>
+
+<p>It’s an API framework that focuses on speed of deployment and simplicity. </p>
+
+<p>If you're looking to create an API quickly, most people default to php. This is because nearly every server is configured to support php by default. The problem with php is that it lacks the feature set and scalability of other languages like java or python. If you're looking to create an API in one of these more complete languages, most people will turn to a framework like Django. The problem with Django is the amount of configuration and set up required makes it useless in certain scenarios such as hackathons and proof of concepts. </p>
+
+<p>Phyth does not have any external dependencies other then vanilla <code>php</code> and <code>python</code>. This allows Phyth to work on any unix bases system out of the box.</p>
+
+<hr>
+<h1 class="how">How do I use it?</h1>
+
+<p>To install Phyth, simply download the source and extract it to wherever you want Phyth to live on your web server. Point your browser to the Phyth directory to load the test page (phyth/index.php). If you see all green, Phyth is up and running. </p>
+
+<p>Adding functions to your API is done by the creation of module. A module is simply a python file that follows a few simple conventions. See the template below to get started on your first module:</p>
+
+<pre><code>import phyth
+def main():
+    phyth.start(function)
+
+def function():
+    ## YOUR CODE STARTS HERE ##
+
+    # this is how you retrieve the sent via the request
+    data = phyth.getData()
+
+    # this is where you put the functionality of the module
+
+    # this is how you send your reply
+    phyth.respond(some_dictionary)
+
+    ## YOUR CODE ENDS HERE ##
+
+if __name__ == "__main__":
+    main()
+</code></pre>
+
+<p>To call an API function, aka module, you must send a post or get request to the phyth.php. Thil will typically be <code>www.yourwebsite.com/phyth/phyth.php</code>. Your request must contain a variable called <code>function</code>. This is what tells Phyth will API function is being called. the function is derived from the file's name, so to call <code>reverse.py</code> you would send <code>reverse</code> as the function. You can send in any aditional data you wish. Here is an example of a get request to a module that reverses a string: </p>
+
+<pre><code>www.yourwebsite.com/phyth/phyth.php?function=reverse&string=johndoe
+</code></pre>
+
+<p>The example request above would return the following in JSON:</p>
+
+<pre><code>{"data":{"new_string":"eodnhoj"}, "error":""}
+</code></pre>
+
+<hr>
+<h1 class="setup">How do I set it up on my server?</h1>
+
+<p>1) Download the source code from github</p>
+
+<p>2) Extract it to the root of your webserver</p>
+
+<p>3) Done. Go create some modules!</p>
+
+     </article>
+
+     <footer>
+       <div>
+         <nav>
+           <a href="http://github.com/evanjhopkins/phyth">GitHub</a>
+         </nav>
+         
+
+         Phyth is a creation of Evan Hopkins
+       </div>
+     </footer>
+</body></html>
