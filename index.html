@@ -7,7 +7,7 @@
   <body class="phythpage">
 
     <header>
-      <span class="version">Phyth v0.0 (Development)</span>
+      <span class="version">Phyth v0.1 (Alpha)</span>
       <br>
       An API framework written in php and python that works 
       <br>
@@ -16,7 +16,7 @@
 
     <menu>
       <a href="https://github.com/evanjhopkins/phyth">Code on Github</a>
-      <a href="https://github.com/evanjhopkins/phyth/archive/master.zip">Download source</a>
+      <a href="https://github.com/evanjhopkins/php-python-api/archive/V0.1.zip">Download source</a>
       <a href="https://github.com/evanjhopkins/phyth/issues">Contribute</a>
     </menu>
 
@@ -30,7 +30,7 @@
 
 <p>If you're looking to create an API quickly, most people default to php. This is because nearly every server is configured to support php by default. The problem with php is that it lacks the feature set and scalability of other languages like java or python. If you're looking to create an API in one of these more complete languages, most people will turn to a framework like Django. The problem with Django is the amount of configuration and set up required makes it useless in certain scenarios such as hackathons and proof of concepts. </p>
 
-<p>Phyth does not have any external dependencies other then vanilla <code>php</code> and <code>python</code>. This allows Phyth to work on any unix bases system out of the box.</p>
+<p>Phyth does not have any external dependencies other then vanilla <code>php</code> and <code>python</code>. This allows Phyth to work on any unix based system out of the box.</p>
 
 <hr>
 <h1 class="how">How do I use it?</h1>
@@ -60,7 +60,7 @@ if __name__ == "__main__":
     main()
 </code></pre>
 
-<p>To call an API function, aka module, you must send a post or get request to the phyth.php. Thil will typically be <code>www.yourwebsite.com/phyth/phyth.php</code>. Your request must contain a variable called <code>function</code>. This is what tells Phyth will API function is being called. the function is derived from the file's name, so to call <code>reverse.py</code> you would send <code>reverse</code> as the function. You can send in any aditional data you wish. Here is an example of a get request to a module that reverses a string: </p>
+<p>To call an API function, aka module, you must send a post or get request to the phyth.php. Thil will typically be <code>www.yourwebsite.com/phyth/phyth.php</code>. Your request must contain a variable called <code>function</code>. This is what tells Phyth will API function is being called. The function is derived from the file's name, so to call <code>reverse.py</code> you would send <code>reverse</code> as the function. You can send in any aditional data you wish. Here is an example of a get request to a module that reverses a string: </p>
 
 <pre><code>www.yourwebsite.com/phyth/phyth.php?function=reverse&string=johndoe
 </code></pre>
